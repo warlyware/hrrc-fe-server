@@ -4,7 +4,8 @@
     angular
         .module('hrrc-app.components')
         .component('hrrcFooter', {
-            templateUrl: 'components/footer/footer.tpl.html'
+            templateUrl: 'components/footer/footer.tpl.html',
+            controller: 'FooterController',
         });
 
 })();
