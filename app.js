@@ -33,6 +33,7 @@ app.use(express.static(path.join(__dirname, 'app')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/scripts', express.static(__dirname + '/node_modules/'));
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,0 +1,49 @@
+$off-white: #f0f0f0;
+$gray: #404040;
+$dark-blue: #00495A;
+$light-blue: #007E8D;
+$beige: #F2EFDB;
+$light-gray: #f6f6f6;
+$mid-gray: #CCCCCC;
+$dark-gray: #404040;
+$lightning-yellow: #F5AA30;
+$princeton-orange: #F59102;
+$astronaut-blue: #00375C;
+$blue-whale: #002D4B;
+$cloud-burst: #1D2F4E;
+$ink: #193446;
+$jasmine: #E9C77B;
+$dark-fern: #164000;
+$green-waterloo: #0E1901;
+
+.color-orange {
+    color: $lightning-yellow;
+}
+
+.color-off-white {
+    color: $off-white;
+}
+
+.color-dark-blue {
+    color: $cloud-burst;
+}
+
+.bg-color-dark-blue {
+    background-color: $cloud-burst;
+}
+
+.bg-color-dark-gray {
+    background-color: $dark-gray;
+}
+
+.bg-color-light-gray {
+    background-color: $light-gray;
+}
+
+.bg-color-beige {
+    background-color: $mid-gray;
+}
+
+.bg-color-dark-green {
+    background-color: $green-waterloo;
+}

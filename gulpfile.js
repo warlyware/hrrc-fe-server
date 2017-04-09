@@ -1,26 +1,41 @@
-var gulp = require('gulp'),
-  nodemon = require('gulp-nodemon'),
-  plumber = require('gulp-plumber'),
-  livereload = require('gulp-livereload');
+'use strict';
 
+var gulp = require('gulp');
+var config = require('./gulp/config.json');
+var sass = require('gulp-sass');
+var concatCss = require('gulp-concat-css');
 
-gulp.task('develop', function () {
-  livereload.listen();
-  nodemon({
-    script: 'bin/www',
-    ext: 'js ejs coffee',
-    stdout: false
-  }).on('readable', function () {
-    this.stdout.on('data', function (chunk) {
-      if(/^Express server listening on port/.test(chunk)){
-        livereload.changed(__dirname);
-      }
-    });
-    this.stdout.pipe(process.stdout);
-    this.stderr.pipe(process.stderr);
-  });
+gulp.task('styles', function() {
+    return gulp.src(config.paths.src.styles)
+        .pipe(sass.sync({ includePaths: config.paths.src.styles_imports }).on('error', sass.logError))
+        .pipe(concatCss('style.css'))
+        .pipe(gulp.dest('public'));
 });
 
-gulp.task('default', [
-  'develop'
-]);
+gulp.task('copy:html', function() {
+    return gulp.src(config.paths.src.html)
+        .pipe(gulp.dest('public'));
+});
+
+gulp.task('copy:js', function() {
+    return gulp.src(config.paths.src.js)
+        .pipe(gulp.dest('public'));
+});
+
+gulp.task('copy:node_modules', function() {
+    return gulp.src(config.paths.node_modules)
+        .pipe(gulp.dest('node_modules'));
+});
+
+gulp.task('copy:images', function() {
+    return gulp.src(config.paths.images)
+        .pipe(gulp.dest('public/img'));
+})
+
+gulp.task('watch', function() {
+    gulp.watch(config.paths.src.html, ['copy:html']);
+    gulp.watch(config.paths.src.js, ['copy:js']);
+    gulp.watch(config.paths.src.styles, ['styles']);
+});
+
+gulp.task('default', ['styles', 'copy:html', 'copy:js', 'copy:node_modules', 'copy:images', 'watch']);
