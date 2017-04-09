@@ -11,7 +11,10 @@
             var vm = this;
 
             vm.submit = function() {
-                console.log('!', vm.subscriber);
+                $http.post('//localhost:3005/email/submit', vm.subscriber)
+                .catch(function(err) {
+                    console.error(err);
+                });
             }
 
             return vm;
