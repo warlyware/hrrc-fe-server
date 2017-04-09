@@ -7,21 +7,22 @@ var domain = process.env.MAILGUN_DOMAIN;
 var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain });
 
 router.post('/submit', (req, res, next) => {
-    console.log(req);
+    console.log(req.body);
 
     var data = {
-        from: 'Excited User <me@samples.mailgun.org>',
-        to: 'fake-email@mail.ru',
-        subject: 'Hello',
-        text: 'Testing some Mailgun awesomness!'
+        from: `${req.body.firstName} ${req.body.lastName} <${req.body.email}>`,
+        to: 'submissions.hrrc@gmail.com',
+        subject: 'Contact Form Submission',
+        text: `
+            The following user has requested to be contacted:
+            Name: ${req.body.firstName} ${req.body.lastName}
+            Email: ${req.body.email}
+        `
     };
 
     mailgun.messages().send(data, function (error, body) {
-        console.log(body);
         return res.send(body);
     });
-
-
 
 });
 
