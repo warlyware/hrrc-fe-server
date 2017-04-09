@@ -12,7 +12,6 @@ router.post('/submit', (req, res, next) => {
     var data = {
         from: `HRRC Website Subscription <postmaster@mail.humanrightsrc.org>`,
         to: 'subscribe.hrrc@gmail.com',
-        cc: 'founder.hrrc@gmail.com',
         subject: 'Contact Form Submission',
         text: `
             The following user has requested to be contacted:
