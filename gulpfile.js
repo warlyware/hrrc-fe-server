@@ -39,3 +39,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['styles', 'copy:html', 'copy:js', 'copy:node_modules', 'copy:images', 'watch']);
+gulp.task('prod', ['styles', 'copy:html', 'copy:js', 'copy:node_modules', 'copy:images']);

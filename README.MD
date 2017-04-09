@@ -1,3 +1,5 @@
-##Seed Application
+##Human Rights Realization Community
 
-Basic application shell with Angular 1.5.5, Angular Material 1.1.0, Gulp 3.9.1, and SASS for css pre-processing.
+Site for the Human Rights Realization Community
+
+Built with Express 4, Angular 1.5.5, Angular Material 1.1.0, Gulp 3.9.1.
