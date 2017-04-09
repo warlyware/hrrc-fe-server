@@ -3,3 +3,4 @@ public/
 .nyc_output
 .sass-cache
 .DS_Store
+.env
