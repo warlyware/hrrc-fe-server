@@ -1,0 +1,16 @@
+<md-card class="article-card-width">
+    <div class="md-card-image article-card-image bg-size-cover bg-position-center bg-no-repeat"
+    ng-style="{'background-image':'url('+$ctrl.article.image.url+')'}"></div>
+    <md-card-title class="padding-bottom-0">
+        <md-card-title-text>
+            <span ng-bind="$ctrl.article.title"
+            class="md-headline font-family-playfair-sc"></span>
+        </md-card-title-text>
+    </md-card-title>
+    <md-card-content class="padding-bottom-0">
+        <div class="md-body-copy" ng-bind-html="$ctrl.article.content.brief"></div>
+    </md-card-content>
+    <md-card-actions class="layout-row layout-align-end-center">
+        <md-button class="color-orange" ui-sref="article({articleId: $ctrl.article.articleId})">Read</md-button>
+    </md-card-actions>
+</md-card>

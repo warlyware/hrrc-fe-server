@@ -1,0 +1,566 @@
+.color-orange {
+  color: #F5AA30;
+}
+
+.color-off-white {
+  color: #f0f0f0;
+}
+
+.color-dark-blue {
+  color: #1D2F4E;
+}
+
+.bg-color-dark-blue {
+  background-color: #1D2F4E;
+}
+
+.bg-color-dark-gray {
+  background-color: #404040;
+}
+
+.bg-color-light-gray {
+  background-color: #f6f6f6;
+}
+
+.bg-color-beige {
+  background-color: #CCCCCC;
+}
+
+.bg-color-dark-green {
+  background-color: #0E1901;
+}
+
+.top-border-gray {
+  border-top: 1px solid #CCCCCC;
+}
+
+.color-orange {
+  color: #F5AA30;
+}
+
+.color-off-white {
+  color: #f0f0f0;
+}
+
+.color-dark-blue {
+  color: #1D2F4E;
+}
+
+.bg-color-dark-blue {
+  background-color: #1D2F4E;
+}
+
+.bg-color-dark-gray {
+  background-color: #404040;
+}
+
+.bg-color-light-gray {
+  background-color: #f6f6f6;
+}
+
+.bg-color-beige {
+  background-color: #CCCCCC;
+}
+
+.bg-color-dark-green {
+  background-color: #0E1901;
+}
+
+.icon-md {
+  font-size: 30px !important;
+}
+
+.icon-lg {
+  font-size: 36px !important;
+}
+
+.padding-top-0 {
+  padding-top: 0;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
+}
+
+.padding-left-0 {
+  padding-left: 0;
+}
+
+.padding-right-0 {
+  padding-right: 0;
+}
+
+.margin-top-0 {
+  margin-top: 0;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+
+.margin-left-0 {
+  margin-left: 0;
+}
+
+.margin-right-0 {
+  margin-right: 0;
+}
+
+.margin-top {
+  margin-top: 16px;
+}
+
+.md-padding-top {
+  padding-top: 16px;
+}
+
+.md-padding-bottom {
+  padding-bottom: 16px;
+}
+
+.md-padding-left {
+  padding-left: 16px;
+}
+
+.md-padding-right {
+  padding-right: 16px;
+}
+
+.md-padding-half {
+  padding: 8px;
+}
+
+.md-padding-left-half {
+  padding-left: 8px;
+}
+
+.md-padding-right-half {
+  padding-right: 8px;
+}
+
+.md-padding-top-half {
+  padding-top: 8px;
+}
+
+.md-padding-bottom-half {
+  padding-bottom: 8px;
+}
+
+.md-margin-half {
+  margin: 8px;
+}
+
+.md-margin-left {
+  margin-left: 16px;
+}
+
+.md-margin-right {
+  margin-right: 16px;
+}
+
+.md-margin-top {
+  margin-top: 16px;
+}
+
+.md-margin-bottom {
+  margin-bottom: 16px;
+}
+
+.md-margin-left-half {
+  margin-left: 8px;
+}
+
+.md-margin-right-half {
+  margin-right: 8px;
+}
+
+.md-margin-top-half {
+  margin-top: 8px;
+}
+
+.md-margin-bottom-half {
+  margin-bottom: 8px;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.margin-0-auto {
+  margin: 0 auto;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.layout-max-width {
+  max-width: 1000px;
+}
+
+.display-block {
+  display: block;
+}
+
+.bg-size-cover {
+  background-size: cover;
+}
+
+.bg-size-contain {
+  background-size: contain;
+}
+
+.bg-position-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.min-height-80 {
+  min-height: 80%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.float-left {
+  float: left;
+}
+
+.flex-none {
+  flex: none;
+}
+.color-orange {
+  color: #F5AA30;
+}
+
+.color-off-white {
+  color: #f0f0f0;
+}
+
+.color-dark-blue {
+  color: #1D2F4E;
+}
+
+.bg-color-dark-blue {
+  background-color: #1D2F4E;
+}
+
+.bg-color-dark-gray {
+  background-color: #404040;
+}
+
+.bg-color-light-gray {
+  background-color: #f6f6f6;
+}
+
+.bg-color-beige {
+  background-color: #CCCCCC;
+}
+
+.bg-color-dark-green {
+  background-color: #0E1901;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #3D2D48;
+}
+
+.arrow:before,
+.arrow:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.arrow:before {
+  right: 50%;
+  border-bottom: 20px solid #3D2D48;
+  border-right: 20px solid transparent;
+}
+
+.arrow:after {
+  left: 50%;
+  border-bottom: 20px solid #3D2D48;
+  border-left: 20px solid transparent;
+}
+.color-orange {
+  color: #F5AA30;
+}
+
+.color-off-white {
+  color: #f0f0f0;
+}
+
+.color-dark-blue {
+  color: #1D2F4E;
+}
+
+.bg-color-dark-blue {
+  background-color: #1D2F4E;
+}
+
+.bg-color-dark-gray {
+  background-color: #404040;
+}
+
+.bg-color-light-gray {
+  background-color: #f6f6f6;
+}
+
+.bg-color-beige {
+  background-color: #CCCCCC;
+}
+
+.bg-color-dark-green {
+  background-color: #0E1901;
+}
+
+.top-border-gray {
+  border-top: 1px solid #CCCCCC;
+}
+body {
+  font-family: 'EB Garamond', serif;
+}
+
+.font-family-garamond {
+  font-family: 'EB Garamond', serif;
+}
+
+.font-family-playfair {
+  font-family: 'Playfair Display', serif !important;
+}
+
+.font-family-playfair-sc {
+  font-family: 'Playfair Display SC', serif !important;
+}
+
+.line-height-3 {
+  line-height: 3rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.md-button {
+  font-family: 'Playfair Display SC', serif !important;
+}
+
+.italic {
+  font-style: italic;
+}
+.about-main-image {
+  background-image: url("http://placehold.it/1000x300");
+  min-height: 300px;
+}
+#articleBody > div {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  min-width: 0;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+.contact-main-image {
+  background-image: url("http://placehold.it/1000x300");
+  min-height: 300px;
+}
+.home-link-image {
+  max-height: 300px;
+}
+
+.home-section-padding {
+  padding-top: 50px;
+}
+
+.home-hero {
+  background-image: url("img/home-hero.jpg");
+  min-height: 440px;
+}
+
+.home-hero-xs {
+  background-image: url("img/home-hero.jpg");
+  min-height: 300px;
+}
+
+.home-section-1 {
+  height: 340px;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-section-1:before {
+  content: " ";
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-radial-gradient(left center, ellipse cover, RGBA(22, 64, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%), url("img/book-grass.jpg") center/cover no-repeat;
+}
+
+.home-section-1-sm {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-section-1-sm:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-radial-gradient(center center, ellipse cover, RGBA(22, 64, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url("img/book-grass.jpg") center/cover no-repeat;
+}
+
+.home-section-2 {
+  height: 340px;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-section-2:before {
+  content: " ";
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 55%;
+  background: -webkit-radial-gradient(left center, ellipse cover, RGBA(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%), url("img/glasses.jpg") center/cover no-repeat;
+}
+
+.home-section-2-sm {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-section-2-sm:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-radial-gradient(center center, ellipse cover, RGBA(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url("img/glasses.jpg") center/cover no-repeat;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+.papers-main-image {
+  background-image: url("/img/library-hero.jpg");
+  min-height: 250px;
+}
+.submissions-main-image {
+  background-image: url("http://placehold.it/1000x300");
+  min-height: 300px;
+}
+.teaching-resources-main-image {
+  background-image: url("/img/library-hero.jpg");
+  min-height: 250px;
+}
+.color-orange {
+  color: #F5AA30;
+}
+
+.color-off-white {
+  color: #f0f0f0;
+}
+
+.color-dark-blue {
+  color: #1D2F4E;
+}
+
+.bg-color-dark-blue {
+  background-color: #1D2F4E;
+}
+
+.bg-color-dark-gray {
+  background-color: #404040;
+}
+
+.bg-color-light-gray {
+  background-color: #f6f6f6;
+}
+
+.bg-color-beige {
+  background-color: #CCCCCC;
+}
+
+.bg-color-dark-green {
+  background-color: #0E1901;
+}
+.header-padding {
+  padding-left: 21px;
+  margin-top: -3.5px;
+}
+
+.xs-title-margin {
+  margin-top: -3px;
+}
+.side-nav-item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.article-card-width {
+  min-width: 350px;
+}
+
+.article-card-image {
+  min-height: 200px;
+  max-height: 200px;
+  min-width: 350px;
+}
