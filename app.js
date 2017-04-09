@@ -10,7 +10,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/user');
-var mailgun = require('./email');
+var email = require('./routes/email');
 
 var app = express();
 
@@ -36,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'app')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/email', email);
 app.use('/scripts', express.static(__dirname + '/node_modules/'));
 
 /// catch 404 and forward to error handler
