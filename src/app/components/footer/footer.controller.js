@@ -11,7 +11,7 @@
             var vm = this;
 
             vm.submit = function() {
-                $http.post('//localhost:3005/email/submit', vm.subscriber)
+                $http.post('/email/submit', vm.subscriber)
                 .catch(function(err) {
                     console.error(err);
                 });

@@ -10,7 +10,7 @@ router.post('/submit', (req, res, next) => {
     console.log(req.body);
 
     var data = {
-        from: `${req.body.firstName} ${req.body.lastName} <${req.body.email}>`,
+        from: `HRRC Website Subscription`,
         to: 'subscribe.hrrc@gmail.com',
         cc: 'founder.hrrc@gmail.com',
         subject: 'Contact Form Submission',
