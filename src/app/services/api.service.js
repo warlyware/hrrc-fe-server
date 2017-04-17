@@ -13,7 +13,7 @@
             }
 
             function getPosts() {
-                var apiBaseUrl = 'http://localhost:3000/api';
+                var apiBaseUrl = '//admin.humanrightsrc.org/api';
                 return $http.get(apiBaseUrl + '/post/list').then(function(res) {
                     return res.data;
                 });

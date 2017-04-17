@@ -44,5 +44,8 @@ angular
             templateUrl: '/papers/papers.tpl.html',
             controller: 'PapersController',
             controllerAs: '$ctrl'
+        })
+        .otherwise({
+            redirectTo: '/'
         });
     }
