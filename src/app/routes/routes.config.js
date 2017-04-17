@@ -2,7 +2,8 @@ angular
     .module('hrrc-app.routes')
     .config(config);
 
-    function config($stateProvider) {
+    function config($stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.otherwise('/view1');
         $stateProvider.state('home', {
             url: '/',
             templateUrl: '/home/home.tpl.html',
@@ -45,7 +46,4 @@ angular
             controller: 'PapersController',
             controllerAs: '$ctrl'
         })
-        .otherwise({
-            redirectTo: '/'
-        });
     }
