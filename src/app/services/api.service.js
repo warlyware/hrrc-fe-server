@@ -13,7 +13,7 @@
             }
 
             function getPosts() {
-                var apiBaseUrl = '//45.55.161.191/api';
+                var apiBaseUrl = 'http://localhost:3000/api';
                 return $http.get(apiBaseUrl + '/post/list').then(function(res) {
                     return res.data;
                 });

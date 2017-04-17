@@ -7,7 +7,6 @@ angular
     config.injector = ['$locationProvider', '$mdThemingProvider'];
 
     function config($locationProvider, $mdThemingProvider) {
-        $locationProvider.html5Mode(true);
 
         $mdThemingProvider.theme('default').primaryPalette('grey').warnPalette('orange');
 

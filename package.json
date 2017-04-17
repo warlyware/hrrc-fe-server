@@ -26,6 +26,7 @@
     "dropcap.js": "^1.0.1",
     "ejs": "^2.3.1",
     "express": "^4.13.3",
+    "mailgun-js": "^0.10.1",
     "morgan": "^1.6.1",
     "ng-showdown": "^1.1.0",
     "serve-favicon": "^2.3.0",
