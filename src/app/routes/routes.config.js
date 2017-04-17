@@ -3,7 +3,7 @@ angular
     .config(config);
 
     function config($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/view1');
+        $urlRouterProvider.otherwise('/');
         $stateProvider.state('home', {
             url: '/',
             templateUrl: '/home/home.tpl.html',
