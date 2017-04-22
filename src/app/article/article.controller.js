@@ -15,7 +15,6 @@ angular
             var regex = /<strong>(.*?)<\/strong>/g;
             vm.article = data;
             vm.author = regex.exec(data.content.brief)[1];
-            debugger;
         });
 
         return vm;
