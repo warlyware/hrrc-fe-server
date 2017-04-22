@@ -12,7 +12,7 @@ angular
         vm.$mdMedia = $mdMedia;
         vm.bodyCopy = bodyCopy.teachingResources;
 
-        ArticleService.getArticles().then(function(articles) {
+        ArticleService.getArticlesByCategory('papers').then(function(articles) {
             vm.articles = articles;
         }).catch(function(err) {
             console.log(err);
