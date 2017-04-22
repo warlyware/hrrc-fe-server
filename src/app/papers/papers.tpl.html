@@ -2,14 +2,16 @@
 <section class="layout-column full-width md-padding-top md-padding-bottom layout-align-center-center"
 ng-class="{'md-padding': appCtrl.$mdMedia('xs')}">
     <div class="layout-row">
-        <h1 class="md-title font-family-playfair-sc">Papers</h1>
+        <h1 class="md-display-1 margin-bottom-0 md-title font-family-playfair-sc">Papers</h1>
     </div>
-    <div class="layout-row layout-align-center md-margin">
-        <div class="md-headline text-align-justify md-padding layout-max-width">
+    <div class="layout-row layout-align-center">
+        <div class="md-headline text-align-justify md-padding-left md-padding-right
+        md-padding-bottom layout-max-width">
             <p class="md-body-2" ng-bind="::$ctrl.bodyCopy.main"></p>
         </div>
     </div>
     <div class="layout-row layout-wrap layout-xs-column  layout-max-width">
-        <hrrc-article-card class="flex-gt-xs-50" ng-repeat="article in $ctrl.articles" article="article"></hrrc-article-card>
+        <hrrc-article-card class="flex-gt-xs-50" ng-repeat="article in $ctrl.articles"
+        article="article" ng-if="article.state === 'published'"></hrrc-article-card>
     </div>
 </section>
