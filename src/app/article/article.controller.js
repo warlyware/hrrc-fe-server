@@ -12,7 +12,6 @@ angular
 
         ArticleService.getArticleById($stateParams.articleId).then(function(data) {
             vm.article.body = data;
-            $scope.$apply();
         });
 
         return vm;

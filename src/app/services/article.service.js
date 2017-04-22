@@ -10,11 +10,16 @@
 
         function ArticleService($http, ApiService) {
             return {
-                getArticles: getArticles,
+                getArticles,
+                getArticlesByCategory
             }
 
             function getArticles() {
                 return ApiService.getPosts();
+            }
+
+            function getArticlesByCategory(category) {
+                return ApiService.getPostsByCategory(category);
             }
         }
 

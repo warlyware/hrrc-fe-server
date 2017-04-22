@@ -8,13 +8,21 @@
         ApiService.$inject = ['$http'];
 
         function ApiService($http) {
+            var apiBaseUrl = '//admin.humanrightsrc.org/api';
+
             return {
-                getPosts: getPosts
+                getPosts,
+                getPostsByCategory
             }
 
             function getPosts() {
-                var apiBaseUrl = '//admin.humanrightsrc.org/api';
                 return $http.get(apiBaseUrl + '/post/list').then(function(res) {
+                    return res.data;
+                });
+            }
+
+            function getPostsByCategory(category) {
+                return $http.get(apiBaseUrl + `/post-by-category/${category}`).then(function(res) {
                     return res.data;
                 });
             }
