@@ -1,11 +1,9 @@
-<section class="md-padding md-margin layout-row layout-wrap layout-align-center">
-    <div class="layout-max-width layout-column flex">
-        <md-progress-circular ng-show="!$ctrl.article.body"></md-progress-circular>
-        <div ng-if="$ctrl.userIsAdmin()" class="layout-row full-width">
-            <i class="material-icons icon-md color-orange cursor-pointer"
-            ng-click="$ctrl.editArticle()">edit</i>
-        </div>
-        <div id="articleBody" ng-show="$ctrl.article.body" markdown-to-html="$ctrl.article.body"
-        class="layout-row"></div>
+<section class="md-padding md-margin">
+    <div class="layout-max-width margin-0-auto">
+        <h1 class="md-display-2 md-margin-top margin-bottom-0" ng-bind="$ctrl.article.title"></h1>
+        <h4 class="margin-left-4 margin-top-0 margin-bottom-0" ng-bind="$ctrl.author"></h4>
+        <hr />
+        <img class="flex-100 flex-gt-sm-60" src="{{$ctrl.article.image.secure_url}}" alt="">
+        <div id="articleBody" ng-bind-html="$ctrl.article.content.extended"></div>
     </div>
 </section>

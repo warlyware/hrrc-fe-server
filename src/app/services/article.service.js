@@ -12,7 +12,8 @@
             return {
                 getArticles,
                 getArticlesByCategory,
-                getArticleBySlug
+                getArticleBySlug,
+                getArticleById
             }
 
             function getArticles() {
@@ -25,6 +26,10 @@
 
             function getArticleBySlug(slug) {
                 return ApiService.getPostBySlug(slug);
+            }
+
+            function getArticleById(id) {
+                return ApiService.getPostById(id);
             }
         }
 

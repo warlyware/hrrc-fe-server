@@ -14,6 +14,7 @@
                 getPosts,
                 getPostsByCategory,
                 getPostBySlug,
+                getPostById
             }
 
             function getPosts() {
@@ -33,5 +34,13 @@
                     return res.data;
                 });
             }
+
+            function getPostById(id) {
+                return $http.get(apiBaseUrl + `/post/${id}`).then(function(res) {
+                    return res.data;
+                });
+            }
+
+
         }
 })();
