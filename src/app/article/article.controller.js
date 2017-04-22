@@ -10,7 +10,7 @@ angular
         var vm = this;
         vm.article = {};
 
-        ArticleService.getArticleById($stateParams.articleId).then(function(data) {
+        ArticleService.getArticleBySlug($stateParams.articleId).then(function(data) {
             vm.article.body = data;
         });
 

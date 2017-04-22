@@ -12,7 +12,8 @@
 
             return {
                 getPosts,
-                getPostsByCategory
+                getPostsByCategory,
+                getPostBySlug,
             }
 
             function getPosts() {
@@ -23,6 +24,12 @@
 
             function getPostsByCategory(category) {
                 return $http.get(apiBaseUrl + `/post-by-category/${category}`).then(function(res) {
+                    return res.data;
+                });
+            }
+
+            function getPostBySlug(slug) {
+                return $http.get(apiBaseUrl + `/post/${slug}`).then(function(res) {
                     return res.data;
                 });
             }

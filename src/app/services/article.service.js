@@ -11,7 +11,8 @@
         function ArticleService($http, ApiService) {
             return {
                 getArticles,
-                getArticlesByCategory
+                getArticlesByCategory,
+                getArticleBySlug
             }
 
             function getArticles() {
@@ -20,6 +21,10 @@
 
             function getArticlesByCategory(category) {
                 return ApiService.getPostsByCategory(category);
+            }
+
+            function getArticleBySlug(slug) {
+                return ApiService.getPostBySlug(slug);
             }
         }
 

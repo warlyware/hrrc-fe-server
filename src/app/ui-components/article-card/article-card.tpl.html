@@ -9,8 +9,9 @@
     </md-card-title>
     <md-card-content class="padding-bottom-0">
         <div class="md-body-copy" ng-bind-html="$ctrl.article.content.brief"></div>
+        <!--<div class="md-body-copy" ng-bind="$ctrl.article | json"></div>-->
     </md-card-content>
     <md-card-actions class="layout-row layout-align-end-center">
-        <md-button class="color-orange" ui-sref="article({articleId: $ctrl.article.articleId})">Read</md-button>
+        <md-button class="color-orange" ui-sref="article({articleId: $ctrl.article.slug})">Read</md-button>
     </md-card-actions>
 </md-card>
