@@ -2,7 +2,7 @@
 ng-class="{'md-padding-top-half': $ctrl.$mdMedia('gt-xs'),
     'layout-align-start-center': $ctrl.$mdMedia('xs')}">
     <div class="layout-row layout-max-width margin-0-auto layout-wrap layout-align-gt-xs-center-center"
-    ng-class="{'md-padding-left full-width': $ctrl.$mdMedia('xs')}"}>
+    ng-class="{'md-padding-left full-width': $ctrl.$mdMedia('xs')}">
         <i class="hide show-xs material-icons md-margin icon-md color-orange cursor-pointer"
         ng-click="$ctrl.toggleSideNav()">menu</i>
         <a class="color-orange md-headline md-margin text-decoration-none font-family-playfair-sc"
@@ -13,7 +13,8 @@ ng-class="{'md-padding-top-half': $ctrl.$mdMedia('gt-xs'),
             <span class="hide show-xs xs-title-margin">
                 H R R C
             </span>
-            <span class="hide show-gt-xs">
+            <span class="hide show-gt-xs"
+            ng-class="{'md-display-1': $ctrl.$mdMedia('gt-sm')}">
                 Human Rights Realization Community
             </span>
         </div>
