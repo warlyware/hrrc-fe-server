@@ -5,21 +5,21 @@ ng-class="{'md-padding-top-half': $ctrl.$mdMedia('gt-xs'),
     ng-class="{'md-padding-left full-width': $ctrl.$mdMedia('xs')}">
         <i class="hide show-xs material-icons md-margin icon-md color-orange cursor-pointer"
         ng-click="$ctrl.toggleSideNav()">menu</i>
-        <a class="color-orange md-headline md-margin text-decoration-none font-family-playfair-sc"
+        <a class="color-orange md-headline md-margin-top-half text-decoration-none font-family-playfair-sc"
         ui-sref="home">
-        <div class="layout-row full-width"
-        ng-class="{'header-padding': $ctrl.$mdMedia('gt-xs'),
-        'md-padding-top-half': $ctrl.$mdMedia('sm') }">
-            <span class="hide show-xs xs-title-margin">
-                H R R C
-            </span>
-            <span class="hide show-gt-xs"
-            ng-class="{'md-display-1': $ctrl.$mdMedia('gt-sm')}">
-                Human Rights Realization Community
-            </span>
-        </div>
+            <div class="layout-row full-width"
+            ng-class="{'header-padding': $ctrl.$mdMedia('gt-xs'),
+            'md-padding-top-half': $ctrl.$mdMedia('sm') }">
+                <span class="hide show-xs xs-title-margin">
+                    H R R C
+                </span>
+                <span class="hide show-gt-xs"
+                ng-class="{'md-display-1': $ctrl.$mdMedia('gt-sm')}">
+                    Human Rights Realization Community
+                </span>
+            </div>
         </a>
-        <nav class="hide show-gt-xs layout-row full-width color-orange layout-align-center-center">
+        <nav class="hide show-gt-xs layout-row full-width color-off-white layout-align-center-center">
             <md-button class="" ui-sref="home">
                 Home
             </md-button>
