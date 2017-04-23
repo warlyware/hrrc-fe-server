@@ -8,9 +8,9 @@ angular
 
     function config($locationProvider, $mdThemingProvider) {
 
-        $mdThemingProvider.theme('default').primaryPalette('grey').warnPalette('orange');
+        $mdThemingProvider.theme('default').primaryPalette('indigo').warnPalette('orange');
 
-        $mdThemingProvider.theme('darkTheme').primaryPalette('grey').warnPalette('orange').dark();
+        $mdThemingProvider.theme('darkTheme').primaryPalette('indigo').warnPalette('orange').dark();
     };
 
 })();

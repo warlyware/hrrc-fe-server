@@ -11,14 +11,25 @@
             var vm = this;
 
             vm.submit = function() {
-                $http.post('/email/submit', vm.subscriber)
-                .catch(function(err) {
-                    console.error(err);
+                $http.post('/email/submit', vm.subscriber).then(showSuccessDialog)
+                .catch(showFailDialog);
+            }
+
+            function showSuccessDialog() {
+                DialogService.show({
+                    title: 'Success',
+                    textContent: 'Thank you for subscribing.',
+                    ok: 'Close'
                 });
             }
 
-            vm.showDialog = function() {
-                DialogService.show();
+            function showFailDialog(err) {
+                console.error(err);
+                DialogService.show({
+                    title: 'Error',
+                    textContent: 'There was a problem.  Please try again, or email us at founder.hrrc@gmail.com',
+                    ok: 'Close'
+                });
             }
 
             return vm;

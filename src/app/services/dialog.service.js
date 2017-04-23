@@ -13,8 +13,9 @@
                 show
             }
 
-            function show() {
-                console.log('Dialog go');
+            function show(dialogOptions) {
+                var alert = $mdDialog.alert(dialogOptions);
+                $mdDialog.show(alert);
             }
         }
 
