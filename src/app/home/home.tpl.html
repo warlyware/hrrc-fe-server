@@ -3,7 +3,7 @@
     bg-position-center bg-size-cover position-relative"
     ng-class="{'home-hero': !$ctrl.$mdMedia('xs'),
     'home-hero-xs': $ctrl.$mdMedia('xs')}">
-        <div class="layout-column layout-max-width margin-0-auto
+        <div class="layout-column layout-max-width margin-0-auto text-shadow-black
         flex-80 flex-offset-10 flex-gt-sm-70 font-family-playfair line-height-4 color-off-white"
         ng-class="{'md-display-2 text-align-center': !$ctrl.$mdMedia('xs'),
         'md-headline': $ctrl.$mdMedia('xs')}">
@@ -18,9 +18,10 @@
             <div class="flex-gt-sm-50 flex-offset-gt-sm-50 flex-80 flex-offset-10
             layout-column layout-align-center-center">
                 <div class="home-p-shadowbox">
-                    <p class="text-align-justify color-off-white" ng-bind="::$ctrl.bodyCopy.missionStatement"
-                    ng-class="{'md-headline': !$ctrl.$mdMedia('xs'), 'md-subhead': $ctrl.$mdMedia('xs')}"></p>
-                    <md-button class="text-decoration-none color-off-white float-right" ui-sref="papers">Read More</md-button>
+                    <p class="text-align-justify  color-off-white"
+                    ng-bind="::$ctrl.bodyCopy.missionStatement"
+                    ng-class="{'font-size-18 line-height-26': !$ctrl.$mdMedia('xs'), 'md-subhead': $ctrl.$mdMedia('xs')}"></p>
+                    <md-button class="text-decoration-none color-orange float-right" ui-sref="about">Read More</md-button>
                 </div>
             </div>
         </div>
@@ -34,11 +35,11 @@
             layout-column layout-align-center-center">
                 <div class="home-p-shadowbox">
                     <p class="text-align-justify color-off-white"
-                    ng-class="{'md-headline': !$ctrl.$mdMedia('xs'), 'md-subhead': $ctrl.$mdMedia('xs')}">
+                    ng-class="{'font-size-18 line-height-26': !$ctrl.$mdMedia('xs'), 'md-subhead': $ctrl.$mdMedia('xs')}">
                         HRRC accomplishes its goals by drafting and disseminating human rights lesson plans and supplementary
                         materials for university instructors.
                     </p>
-                    <md-button class="text-decoration-none color-off-white float-right" ui-sref="papers">See Our Materials</md-button>
+                    <md-button class="text-decoration-none color-orange float-right" ui-sref="papers">See Our Materials</md-button>
                 </div>
             </div>
         </div>
