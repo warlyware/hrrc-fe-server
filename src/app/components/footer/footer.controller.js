@@ -5,9 +5,9 @@
         .module('hrrc-app.components')
         .controller('FooterController', FooterController);
 
-        FooterController.$inject = ['$http'];
+        FooterController.$inject = ['$http', 'DialogService'];
 
-        function FooterController($http) {
+        function FooterController($http, DialogService) {
             var vm = this;
 
             vm.submit = function() {
@@ -15,6 +15,10 @@
                 .catch(function(err) {
                     console.error(err);
                 });
+            }
+
+            vm.showDialog = function() {
+                DialogService.show();
             }
 
             return vm;
