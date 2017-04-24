@@ -4,6 +4,7 @@
         <h4 class="margin-left-4 margin-top-0 margin-bottom-0" ng-bind="$ctrl.author"></h4>
         <hr />
         <img class="flex-100 flex-gt-sm-60" src="{{$ctrl.article.image.secure_url}}" alt="">
-        <div id="articleBody" ng-bind-html="$ctrl.article.content.extended"></div>
+        <div id="articleBody" ng-bind-html="$ctrl.article.content.extended"
+        class="dont-break-out"></div>
     </div>
 </section>
