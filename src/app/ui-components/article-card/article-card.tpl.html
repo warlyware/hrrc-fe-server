@@ -1,4 +1,4 @@
-<md-card class="article-card-width">
+<md-card class="article-card-width cursor-pointer" ui-sref="article({articleId: $ctrl.article.slug})">
     <div class="md-card-image article-card-image bg-size-cover bg-position-center bg-no-repeat"
     ng-style="{'background-image':'url('+$ctrl.article.image.url+')'}"></div>
     <md-card-title class="padding-bottom-0">
@@ -10,7 +10,4 @@
     <md-card-content class="padding-bottom-0">
         <div class="md-body-copy" ng-bind-html="$ctrl.article.content.brief"></div>
     </md-card-content>
-    <md-card-actions class="layout-row layout-align-end-center">
-        <md-button class="color-dark-orange" ui-sref="article({articleId: $ctrl.article.slug})">Read</md-button>
-    </md-card-actions>
 </md-card>
