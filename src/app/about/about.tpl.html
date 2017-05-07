@@ -1,35 +1,35 @@
 <div class="layout-row layout-xs-column layout-max-width margin-0-auto">
-    <div class="md-padding md-margin font-family-playfair-sc"
-    ng-class="{'text-align-center md-display-2': ($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm')),
-        'md-display-3': !($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm'))}">
+    <div class="md-padding font-family-playfair-sc"
+    ng-class="{'text-align-center md-display-2 md-margin': ($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm')),
+        'md-display-3 md-margin-top': !($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm'))}">
         Welcome to the Human Rights Realization Community
     </div>
-    <div class="layout-column md-padding-left md-padding-right md-margin text-align-justify"
-    ng-class="{'md-headline': $ctrl.$mdMedia('gt-sm'),
-    'md-subhead': !$ctrl.$mdMedia('gt-sm')}">
+    <div class="layout-column md-padding-left md-padding-right md-margin text-align-justify md-subhead"
+    ng-class="{'margin-top-0': ($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm')),
+        'md-margin-top': !($ctrl.$mdMedia('xs') || $ctrl.$mdMedia('sm'))}">
         <p>
             <span ng-bind="::$ctrl.bodyCopy.main"></span>
         </p>
         <h2 class="font-family-playfair-sc md-padding-top">
             Vision
         </h2>
-        <p>
+        <p class="margin-top-0">
             At HRRC, we envision a world where human rights are the cornerstone of a student’s education.
         </p>
-        <p>
+        <p class="margin-top-0">
             As such, the HRRC is about empowering instructors from all fields and disciplines to incorporate human
             rights into their academic programs.
         </p>
         <h2 class="font-family-playfair-sc md-padding-top">
             Mission
         </h2>
-        <p>
+        <p class="margin-top-0">
             HRRC accomplishes its goals by drafting and disseminating human rights lesson plans and supplementary
             materials that both graduate and undergraduate university instructors can weave into lectures on a wide
             range of subjects, including social studies, world history, politics, international relations,
             sociology, courses on business management, and even mathematics.
         </p>
-        <p>
+        <p class="margin-top-0">
             HRRC also publishes materials dedicated to the most recent trends in human rights and gives students and instructors alike a platform for discourse and study by submitting and utilizing human rights related articles and papers.
         </p>
     </div>
