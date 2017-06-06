@@ -57,3 +57,16 @@
 .flex-none {
     flex: none;
 }
+
+.no-shrink {
+    flex-basis: auto !important;
+    flex-shrink: 0 !important;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.border-radius-20 {
+    border-radius: 20%;
+}
