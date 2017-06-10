@@ -1,3 +1,13 @@
+.article-card-width {
+    min-width: 280px;
+}
+
+.article-card-image {
+    min-height: 180px;
+    max-height: 180px;
+    min-width: 280px;
+}
+
 hrrc-article-card {
     flex: 1 0 300px;
     margin: 1em;
