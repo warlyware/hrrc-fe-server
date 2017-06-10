@@ -1,9 +1,5 @@
-.article-card-width {
-    min-width: 350px;
-}
-
-.article-card-image {
-    min-height: 200px;
-    max-height: 200px;
-    min-width: 350px;
+hrrc-article-card {
+    flex: 1 0 300px;
+    margin: 1em;
+    min-width: 300px;
 }
