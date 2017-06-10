@@ -4,11 +4,12 @@ angular
     .module('hrrc-app')
     .run(run);
 
-    run.$injector = ['$window', '$rootScope'];
+    run.$injector = ['$rootScope', '$window', '$location'];
 
-    function run($window, $rootScope) {
+    function run($rootScope, $window, $location) {
         $rootScope.$on('$stateChangeSuccess', function() {
             $window.scrollTo(0, 0);
+            $window.ga('send', 'pageview', $location.path());
         });
     }
 
