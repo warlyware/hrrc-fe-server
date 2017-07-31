@@ -3,9 +3,10 @@
     <head>
         <base href="/">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow">
         <meta charset="UTF-8" />
         <title>Human Rights Realization Community</title>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.css">
         <link rel="stylesheet" href="style.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Playfair+Display|Playfair+Display+SC" rel="stylesheet">
@@ -13,7 +14,7 @@
 
     <body ng-controller="ApplicationController as appCtrl" id="body">
         <hrrc-header class="layout-row"></hrrc-header>
-        <ui-view class="layout-column layout-align-center bg-color-off-white"></ui-view>
+        <ui-view class="bg-color-off-white"></ui-view>
         <md-sidenav md-component-id="side-nav">
             <div ng-controller="SideNavController as $ctrl" ng-include="'components/side-nav/side-nav.tpl.html'"
             class="md-sidenav-left layout-column layout-align-center-center layout-fill
@@ -29,7 +30,7 @@
         <script src="scripts/angular-aria/angular-aria.min.js"></script>
         <script src="scripts/angular-messages/angular-messages.min.js"></script>
         <script src="scripts/angular-sanitize/angular-sanitize.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.js"></script>
         <script src="scripts/angular-ui-router/release/angular-ui-router.js"></script>
         <script src="scripts/ng-showdown/dist/ng-showdown.min.js"></script>
         <script src="application.module.js"></script>

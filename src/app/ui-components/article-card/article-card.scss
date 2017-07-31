@@ -1,9 +1,15 @@
 .article-card-width {
-    min-width: 350px;
+    min-width: 280px;
 }
 
 .article-card-image {
-    min-height: 200px;
-    max-height: 200px;
-    min-width: 350px;
+    min-height: 180px;
+    max-height: 180px;
+    min-width: 280px;
+}
+
+hrrc-article-card {
+    flex: 1 0 300px;
+    margin: 1em;
+    min-width: 300px;
 }
