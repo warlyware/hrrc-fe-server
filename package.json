@@ -4,7 +4,6 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "install": "./install.sh",
     "build": "gulp prod",
     "start": "node ./bin/www",
     "test": "mocha --recursive test",
